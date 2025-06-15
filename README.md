@@ -42,8 +42,7 @@ pip install screen_brightness_control pycaw comtypes
 ### ⛔ Exit Instructions
 - Press the **ESC** key at any time to exit the program safely.
 
-### ✅Gesture Guide For All Module 
-
+### ✅ Gesture Guide For All Modules
 ✅🖱️ Part 1: Virtual Mouse Control
 Control your mouse with your hand!
 
