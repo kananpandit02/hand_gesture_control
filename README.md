@@ -27,15 +27,7 @@ Make sure the following conditions are met before using any gesture control modu
 ### 🧩 Use One Module at a Time
 - Run only **one gesture module at a time** for best performance and accuracy.
 - Do not try to mix mouse, volume, and slide controls simultaneously.
-### 📦 Requirements
 
-Before running the project, make sure to install the required Python packages:
-```bash
-pip install opencv-python mediapipe pyautogui numpy
-pip install screen_brightness_control pycaw comtypes
-
-### ⛔ Exit Instructions
-- Press the **ESC** key at any time to exit the program safely.
 ### 🖥️ How to Run
 - Open the project in **Jupyter Notebook** or **Visual Studio Code**.
 - Run **each section individually** to activate the desired control system.
