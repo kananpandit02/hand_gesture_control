@@ -42,7 +42,7 @@ Make sure the following conditions are met before using any gesture control modu
 
 ### ✅ Gesture Guide For All Modules
 ✅🖱️ Part 1: Virtual Mouse Control
-Control your mouse with your hand!
+,Control your mouse with your hand!
 
 ✅ 🖐️ Virtual Mouse Control – Gesture Guide
 
