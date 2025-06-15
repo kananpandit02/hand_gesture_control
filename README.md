@@ -32,6 +32,13 @@ Make sure the following conditions are met before using any gesture control modu
 - Open the project in **Jupyter Notebook** or **Visual Studio Code**.
 - Run **each section individually** to activate the desired control system.
 - All gesture modules work using **MediaPipe** + **OpenCV** + **webcam-based real-time hand tracking**.
+- Before running the project, make sure to install the required Python packages:
+- ```bash
+  pip install opencv-python mediapipe pyautogui numpy
+  pip install screen_brightness_control pycaw comtypes
+
+
+
 
 ### ✅ Gesture Guide For All Modules
 ✅🖱️ Part 1: Virtual Mouse Control
