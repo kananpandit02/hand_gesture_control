@@ -148,6 +148,7 @@ Control slides in presentations using clear gestures:
   year = {2025},
   url = {https://github.com/kananpandit02/hand_gesture_control}
 }
+```
 ## 📄 License
 
 This project was developed as part of an academic research paper and is **not licensed for public use or redistribution**.
