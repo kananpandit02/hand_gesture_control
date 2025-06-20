@@ -12,8 +12,8 @@
 - [🧠 Motivation](#-motivation)  
 - [🖐️ Hand Gesture Modules](#-hand-gesture-modules)  
   - [🖱️ Virtual Mouse Control](#️-part-1-virtual-mouse-control)  
-  - [🔊 Brightness & Volume Control](#-part-2--brightness-and-volume-control-system)  
-  - [📽️ Presentation Slides Control](#️-part-3--presentation-slides-control-system)  
+  - [🔊 Brightness & Volume Control](#-part-2-brightness-and-volume-control-system)  
+  - [📽️ Presentation Slides Control](#️-part-3-presentation-slides-control-system)  
 - [🔮 Future Work](#-future-work)  
 - [📢 Citation](#-citation)  
 - [🌐 Connect With Us](#-connect-with-us)  
@@ -59,8 +59,6 @@ In a world moving toward **touchless interaction**, especially after the pandemi
 ---
 
 ## 🖐️ Hand Gesture Modules
-
----
 
 ### ✅ Part 1: Virtual Mouse Control
 
@@ -136,20 +134,3 @@ Control slides in presentations using clear gestures:
   year = {2025},
   url = {https://github.com/kananpandit02/hand_gesture_control}
 }
-## 📄 License
-
-This project was developed as part of an academic research paper and is **not licensed for public use or redistribution**.
-
-
----
-## 🌐 Connect With Us
-
-- **Partha Mete** (B2430025)  
-  [🌐 Portfolio](https://arnabsingha200228.github.io/)  
-  ✉️ arnabsingha200228@gmail.com  
-
-- **Kanan Pandit** (B2430051)  
-  [🌐 Portfolio](https://kananpanditportfolio.netlify.app/)  
-  ✉️ kananpandot02@gmail.com  
-
-- **Ramakrishna Mission Vivekananda 
