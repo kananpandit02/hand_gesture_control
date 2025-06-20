@@ -67,6 +67,14 @@ Make sure Python is installed, then install the required packages:
 pip install opencv-python mediapipe pyautogui numpy
 pip install screen_brightness_control pycaw comtypes
 ```
+### 🧪 Steps to Run
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/kananpandit02/hand_gesture_control.git
+cd hand_gesture_control
+```
 
 
 
