@@ -67,6 +67,90 @@ You can run this project locally in **Jupyter Notebook** or **Visual Studio Code
 
 Make sure Python is installed, then install the required packages:
 
+
+
+## 🖐️ Hand Gesture Modules
+
+### ✅ Part 1: Virtual Mouse Control
+
+Control your mouse using hand gestures!  
+Real-time hand tracking enables pointer movement, clicks, and scrolling:
+
+| Gesture                       | Fingers Used                       | Description           | Action             |
+|------------------------------|------------------------------------|------------------------|--------------------|
+| 🤘 Spiderman Gesture         | Thumb + Index + Pinky up           | Toggle mouse control   | 🖱️ Enable/Disable   |
+| ☝️ Index Finger Up           | Only Index up                      | Cursor movement        | 🖱️ Move cursor      |
+| 🤏 Thumb + Index Touch       | Thumb and Index touching           | Left Click             | 🖱️ Click            |
+| 🤏 Thumb + Middle Touch      | Thumb and Middle touching          | Right Click            | 🖱️ Right-click      |
+| 🤏 Thumb + Index + Middle    | All three touching                 | Double Click           | 🖱️ Double-click     |
+| ✌️ Index + Middle Up         | Index and Middle up                | Scroll Up              | ⬆️ Scroll up        |
+| 🖖 Index + Middle + Ring Up  | Index, Middle, Ring up             | Scroll Down            | ⬇️ Scroll down      |
+
+#### ℹ️ Notes:
+- Use **Spiderman gesture** to toggle control (1s cooldown).
+- Ensure fingers are **clearly visible** and close together for clicks.
+- Press **ESC** to exit the module.
+
+---
+
+### ✅ Part 2: Brightness and Volume Control System
+
+Use wrist tilt + hand gestures to control system volume and brightness:
+
+| Gesture               | Hand        | Description                        | Action             |
+|-----------------------|-------------|------------------------------------|--------------------|
+| 🤘 Spiderman Gesture  | Left/Right  | Toggle control (Volume / Brightness) | Enable control     |
+| ✋ Hand Tilt Up/Down  | Right       | Adjust brightness via tilt         | Brightness +/−     |
+| ✋ Hand Tilt Up/Down  | Left        | Adjust volume via tilt             | Volume +/−         |
+
+#### 🔎 Visual Feedback:
+- 🟡 Yellow bar = Brightness (bottom left)  
+- 🔵 Blue bar = Volume (top right)  
+- ✅ Green = Active | ❌ Red = Inactive
+
+---
+
+### ✅ Part 3: Presentation Slides Control System
+
+Control slides in presentations using clear gestures:
+
+| Gesture Name       | Description                      | Action             | When It Works                |
+|--------------------|----------------------------------|--------------------|------------------------------|
+| ✊ Fist             | Toggle START/STOP gesture system | System ON/OFF      | Single hand + 5s cooldown    |
+| 👉 Index Up        | Move to next slide               | ➡️ Next Slide      | When system is STARTED       |
+| ✌️ Index + Middle  | Move to previous slide           | ⬅️ Previous Slide  | When system is STARTED       |
+
+#### ⌛ Cooldowns:
+- **Fist Toggle**: 5 seconds  
+- **Slide Control**: 1 second
+
+---
+
+## 🔮 Future Work
+
+- Add **gesture-controlled media player** (play/pause/volume).
+- Enable **custom gesture recording & training**.
+- Integrate with **AR/VR or IoT systems** for smart environments.
+- Optimize for **mobile devices or browser-based control**.
+- Support for **gesture-based app switching and screen capture**.
+
+---
+
+## 📢 Citation
+
+```bibtex
+@misc{fusioneyes2025handgesturecontrol,
+  author = {Kanan Pandit and Partha Mete},
+  title = {Hand Gesture Control Suite using MediaPipe & OpenCV},
+  year = {2025},
+  url = {https://github.com/kananpandit02/hand_gesture_control}
+}
+
+
+
+
+
+
 ```bash
 pip install opencv-python mediapipe pyautogui numpy
 pip install screen_brightness_control pycaw comtypes
