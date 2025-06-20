@@ -75,6 +75,19 @@ pip install screen_brightness_control pycaw comtypes
 git clone https://github.com/kananpandit02/hand_gesture_control.git
 cd hand_gesture_control
 ```
+2. **Launch Jupyter Notebook using::**
+```bash
+jupyter notebook
+```
+3. **Run each cell step-by-step:**
+   Ensure your webcam is connected and accessible.
+
+Only run one gesture module at a time to avoid conflicts.
+
+
+
+
+
 
 
 
