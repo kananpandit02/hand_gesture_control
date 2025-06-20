@@ -1,174 +1,129 @@
 # 🖐️ Hand Gesture Control Suite using MediaPipe & OpenCV
 
-This project integrates multiple **hand gesture-based control systems** into a single interactive Jupyter Notebook using **MediaPipe**, **OpenCV**, and **PyAutoGUI**. It allows users to control:
-
-- 🖱️ Virtual Mouse  
-- 🔊 System Volume/Brightness  
-- 📽️ Presentation Slides
+[![Colab](https://img.shields.io/badge/Google%20Colab-%23000000.svg?logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1Y4Mc3SkkGYlL9fyfsZeUveqfEqUZ8j_3?usp=drive_open)
+![License: None](https://img.shields.io/badge/License-None-lightgrey)
 
 ---
 
-## ✅ General Usage Guide for All Modules
+## 📚 Table of Contents
 
-Make sure the following conditions are met before using any gesture control module:
+- [📖 Overview](#-overview)  
+- [🎯 Objectives](#-objectives)  
+- [🧠 Motivation](#-motivation)  
+- [🖐️ Hand Gesture Modules](#-hand-gesture-modules)  
+  - [🖱️ Virtual Mouse Control](#️-part-1-virtual-mouse-control)  
+  - [🔊 Brightness & Volume Control](#-part-2--brightness-and-volume-control-system)  
+  - [📽️ Presentation Slides Control](#️-part-3--presentation-slides-control-system)  
+- [🔮 Future Work](#-future-work)  
+- [📢 Citation](#-citation)  
+- [🌐 Connect With Us](#-connect-with-us)  
 
-### 🎥 Enable Your Webcam
-- Ensure your webcam is working and accessible.
-- Hand tracking is done in **real-time** using webcam input.
+---
 
-### 💡 Run in a Well-Lit Environment
-- Good lighting improves hand landmark detection accuracy.
-- Avoid shadows on your hand or excessive glare.
+## 📖 Overview
 
-### 🧹 Avoid Cluttered Backgrounds
-- Use a clean and plain background to prevent gesture recognition errors.
-- Avoid moving objects behind you.
+This project is an all-in-one **Hand Gesture Control Suite** that leverages **MediaPipe**, **OpenCV**, and **PyAutoGUI** to perform system-level interactions using hand gestures captured through a webcam. The suite includes three main modules:  
+- Virtual Mouse Control  
+- System Brightness & Volume Adjustment  
+- Presentation Slide Navigation  
 
-### 🧩 Use One Module at a Time
-- Run only **one gesture module at a time** for best performance and accuracy.
-- Do not try to mix mouse, volume, and slide controls simultaneously.
+It enables a **touchless interface** ideal for accessibility, smart environments, and hands-free computing.
 
-### 🖥️ How to Run
-- Open the project in **Jupyter Notebook** or **Visual Studio Code**.
-- Run **each section individually** to activate the desired control system.
-- All gesture modules work using **MediaPipe** + **OpenCV** + **webcam-based real-time hand tracking**.
-- Before running the project, make sure to install the required Python packages:
-- ```bash
-  pip install opencv-python mediapipe pyautogui numpy
-  pip install screen_brightness_control pycaw comtypes
+---
 
+## 🎯 Objectives
 
+- Develop accurate real-time hand gesture recognition using MediaPipe.
+- Implement intuitive gesture-based controls for common computer tasks.
+- Combine multiple gesture modules in a unified and easy-to-use system.
+- Enable seamless user experience across platforms via webcam input.
 
+---
 
-### ✅ Gesture Guide For All Modules
-✅🖱️ Part 1: Virtual Mouse Control
-,Control your mouse with your hand!
+## 🧠 Motivation
 
-✅ 🖐️ Virtual Mouse Control – Gesture Guide
+In a world moving toward **touchless interaction**, especially after the pandemic, gesture control offers a powerful alternative to traditional input devices. This project is designed to:
+- Improve accessibility for differently-abled users.
+- Explore human-computer interaction (HCI) using computer vision.
+- Serve as a foundation for future smart home or classroom systems.
+
+---
+
+## 🖐️ Hand Gesture Modules
+
+---
+
+### ✅ Part 1: Virtual Mouse Control
+
+Control your mouse using hand gestures!  
+Real-time hand tracking enables pointer movement, clicks, and scrolling:
 
 | Gesture                       | Fingers Used                                | Description                       | Action               |
 |------------------------------|---------------------------------------------|-----------------------------------|----------------------|
-| 🤘 Spiderman Gesture         | Thumb + Index + Pinky up (Middle, Ring down) | Toggle mouse control (on/off)     | 🖱️ Enable/Disable mouse movement |
-| ☝️ Index Finger Up           | Only Index up                                | Move mouse cursor                 | 🖱️ Cursor follows index tip     |
-| 🤏 Thumb + Index Touch       | Thumb and Index touching                     | Perform Left Click                | 🖱️ Left-click       |
-| 🤏 Thumb + Middle Touch      | Thumb and Middle touching                    | Perform Right Click               | 🖱️ Right-click      |
-| 🤏 Thumb + Index + Middle    | All three touching (Index, Middle, Thumb)    | Perform Double Click              | 🖱️ Double-click     |
-| ✌️ Index + Middle Up         | Index and Middle up                          | Scroll Up                         | ⬆️ Scroll content up |
-| 🖖 Index + Middle + Ring Up  | Index, Middle, and Ring up                   | Scroll Down                       | ⬇️ Scroll content down |
-## ℹ️ Notes:
-- Make sure your hand is **clearly visible** to the webcam.
-- Use the **Spiderman gesture** to **toggle mouse control** (with a 1-second cooldown).
-- Click gestures require fingers to be **very close** (almost touching).
-- Press **ESC** key to **exit** the program.
+| 🤘 Spiderman Gesture         | Thumb + Index + Pinky up                    | Toggle mouse control              | 🖱️ Enable/Disable    |
+| ☝️ Index Finger Up           | Only Index up                               | Cursor movement                   | 🖱️ Move cursor       |
+| 🤏 Thumb + Index Touch       | Thumb and Index touching                    | Left Click                        | 🖱️ Click             |
+| 🤏 Thumb + Middle Touch      | Thumb and Middle touching                   | Right Click                       | 🖱️ Right-click       |
+| 🤏 Thumb + Index + Middle    | All three touching                          | Double Click                      | 🖱️ Double-click      |
+| ✌️ Index + Middle Up         | Index and Middle up                         | Scroll Up                         | ⬆️ Scroll up         |
+| 🖖 Index + Middle + Ring Up  | Index, Middle, Ring up                      | Scroll Down                       | ⬇️ Scroll down       |
 
-
-✅🔊 Part 2:  Brightness and Volume Control System
-
-✅ ✋ Gesture-Based Brightness & Volume Control -Gesture Guide
-
-| Gesture                         | Hand  | Description                                            | Action                            |
-|----------------------------------|--------|--------------------------------------------------------|-----------------------------------|
-| 🤘 Spiderman Gesture             | Left / Right | Thumb, Index, and Pinky up (others down)                 | Toggle control (Left = Volume, Right = Brightness) |
-| ✋ Hand Tilt Up/Down (Active)     | Right  | Rotate hand upward/downward when active                | Increase / Decrease Brightness    |
-| ✋ Hand Tilt Up/Down (Active)     | Left   | Rotate hand upward/downward when active                | Increase / Decrease Volume        |
+ℹ️ Notes:
+- Use **Spiderman gesture** to toggle control with a 1s cooldown.
+- Ensure fingers are clearly visible and close together for clicks.
+- Press **ESC** to exit the module.
 
 ---
 
-## ℹ️ How It Works
+### ✅ Part 2: Brightness and Volume Control System
 
-- **Spiderman gesture** toggles control mode:
-  - 🫱 **Right hand:** Toggle brightness control
-  - 🫲 **Left hand:** Toggle volume control
-- Once a hand is active:
-  - **Tilt wrist upward** to increase
-  - **Tilt wrist downward** to decrease
-- **Smooth control** using angle difference and buffer.
-- **Glow meters** show brightness and volume levels for visual feedback.
-- **ESC key** exits the program.
+Use wrist tilt + hand gestures to control system volume and brightness:
 
-## 📊 Visual Feedback
+| Gesture                         | Hand   | Description                              | Action                            |
+|----------------------------------|--------|------------------------------------------|-----------------------------------|
+| 🤘 Spiderman Gesture             | Left/Right | Toggle control (Volume / Brightness)   | Enable control                    |
+| ✋ Hand Tilt Up/Down             | Right  | Adjust brightness via tilt               | Brightness +/−                    |
+| ✋ Hand Tilt Up/Down             | Left   | Adjust volume via tilt                   | Volume +/−                        |
 
-- **Yellow horizontal bar**: Brightness (bottom left)
-- **Blue vertical bar**: Volume (top right)
-- Control is **temporarily displayed** after each adjustment (1.5 seconds)
-- Hand status displayed at the top:
-  - ✅ Green = Active
-  - ❌ Red = Inactive
-
-
-
-✅📽️ Part 3:  Presentation slides Control System
-
-✅ 🖐️ Presentation slides Control -Gesture Guide
-
-This guide describes how to control your presentation slides using hand gestures powered by MediaPipe and OpenCV.
+🔎 Visual Feedback:
+- Yellow bar = Brightness (bottom left)
+- Blue bar = Volume (top right)
+- ✅ Green = Active | ❌ Red = Inactive
 
 ---
 
-## ✨ Gesture Summary
+### ✅ Part 3: Presentation Slides Control System
 
-| Gesture Name        | Hand Pose Description                                                                 | Action Triggered              | When It Works                         |
-|---------------------|----------------------------------------------------------------------------------------|-------------------------------|----------------------------------------|
-| ✊ **Fist Toggle**   | All fingers curled (tips below 2nd joints), like a closed fist                        | Toggle START/STOP system      | Only when **one hand is detected** + cooldown (5s) |
-| 👉 **Next Slide**    | Only **index finger up** (middle, ring, pinky curled)                                 | Go to **next** slide (`→`)    | Only when system is **STARTED**       |
-| ✌️ **Previous Slide**| **Index + middle fingers up** (ring + pinky curled)                                   | Go to **previous** slide (`←`)| Only when system is **STARTED**       |
-| 🟩 **Status Bar**    | —                                                                                      | Displays `STARTED` (green) or `STOPPED` (red) | Always visible              |
+Control slides in presentations using clear gestures:
 
----
+| Gesture Name        | Description                            | Action             | When It Works                      |
+|---------------------|----------------------------------------|--------------------|------------------------------------|
+| ✊ Fist              | Toggle START/STOP gesture system       | System ON/OFF      | Single hand + 5s cooldown          |
+| 👉 Index Up         | Move to next slide                     | ➡️ Next Slide      | When system is STARTED             |
+| ✌️ Index + Middle   | Move to previous slide                 | ⬅️ Previous Slide  | When system is STARTED             |
 
-## ⏱️ Cooldown Timings
-
-| Name             | Purpose                                  | Duration     |
-|------------------|-------------------------------------------|--------------|
-| `TOGGLE_CD`      | Cooldown for **fist gesture toggle**      | 5 seconds    |
-| `GESTURE_CD`     | Cooldown for **slide gestures**           | 1 second     |
+⌛ Cooldowns:
+- Fist Toggle: 5s  
+- Slide Control: 1s
 
 ---
 
-## 💡 Notes
+## 🔮 Future Work
 
-- **System is STOPPED by default.** Use the ✊ *fist gesture* to START or STOP it.
-- Only **one hand** is actively analyzed for gesture control.
-- All gestures rely on the position of hand landmarks from MediaPipe.
--Press **ESC** key to **exit** the program.
+- Add **gesture-controlled media player** (play/pause/volume).
+- Enable **custom gesture recording & training**.
+- Integrate with **AR/VR or IoT systems** for smart environments.
+- Optimize for **mobile devices or browser-based control**.
+- Support for **gesture-based app switching and screen capture**.
 
+---
 
+## 📢 Citation
 
-✅✅Regardless of which part you're running:
-
-🧠 Best Practices
-🖥️ Run only one module at a time to prevent conflicts.
-
-🎯 Keep your hand centered and within the webcam frame.
-
-💡 Ensure consistent lighting — avoid shadows or glare.
-
-✋ Make deliberate and clear gestures — no fast or abrupt motion.
-
-
-🔁 General Controls
-📷 Webcam is essential — real-time hand tracking is the core.
-
-⏹️ Press ESC anytime to exit any control system safely.
-
-🎬 Each module runs independently — activate them one at a time from Jupyter Notebook or VS Code.
-
-
-
-👨‍💻 Developed By
-This project is part of the Hand Gesture Control Suite developed using:
-
-🧠 MediaPipe – real-time hand tracking
-
-🧰 OpenCV – image & video processing
-
-🖱️ PyAutoGUI – mouse & keyboard automation
-
-🔉 PyCAW – audio control on Windows
-
-🌞 screen_brightness_control – brightness adjustments
-
-
-
-
-
+```bibtex
+@misc{fusioneyes2025handgesturecontrol,
+  author = {Kanan Pandit and Partha Mete},
+  title = {Hand Gesture Control Suite using MediaPipe & OpenCV},
+  year = {2025},
+  url = {https://github.com/kananpandit02/hand_gesture_control}
+}
