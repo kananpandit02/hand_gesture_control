@@ -83,6 +83,22 @@ jupyter notebook
    Ensure your webcam is connected and accessible.
 
 Only run one gesture module at a time to avoid conflicts.
+3. **💡 Usage Tips:**
+  Run the program in a well-lit environment.
+  Use a plain background to avoid gesture misdetection.
+  Keep gestures clear and deliberate.
+  Press the ESC key to exit any module safely.
+
+
+💡 Usage Tips
+Run the program in a well-lit environment.
+
+Use a plain background to avoid gesture misdetection.
+
+Keep gestures clear and deliberate.
+
+Press the ESC key to exit any module safely.
+
 
 
 
