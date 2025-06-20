@@ -22,12 +22,20 @@
 
 ## 📖 Overview
 
-This project is an all-in-one **Hand Gesture Control Suite** that leverages **MediaPipe**, **OpenCV**, and **PyAutoGUI** to perform system-level interactions using hand gestures captured through a webcam. The suite includes three main modules:  
-- Virtual Mouse Control  
-- System Brightness & Volume Adjustment  
-- Presentation Slide Navigation  
+**Hand Gesture Control Suite** is an integrated project developed by:
 
-It enables a **touchless interface** ideal for accessibility, smart environments, and hands-free computing.
+- **Kanan Pandit** (B2430051)  
+- **Partha Mete** (B2430052)  
+- **Ramakrishna Mission Vivekananda Educational and Research Institute**, Belur Math, Howrah, West Bengal
+
+This project brings together multiple real-time hand gesture-based system control modules into one cohesive toolkit using **MediaPipe**, **OpenCV**, and **PyAutoGUI**. It enables intuitive, touchless interaction with a computer using simple hand gestures captured via webcam.
+
+Modules included:
+- 🖱️ Virtual Mouse  
+- 🔊 Brightness & Volume Adjustment  
+- 📽️ Presentation Slide Navigation  
+
+Ideal for use in accessibility tools, smart classrooms, and human-computer interaction (HCI) research.
 
 ---
 
