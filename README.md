@@ -134,3 +134,21 @@ Control slides in presentations using clear gestures:
   year = {2025},
   url = {https://github.com/kananpandit02/hand_gesture_control}
 }
+## 📄 License
+
+This project was developed as part of an academic research paper and is **not licensed for public use or redistribution**.
+
+## 🌐 Connect With Us
+
+- **Kanan Pandit** (B2430051)  
+  [🌐 Portfolio](https://kananpanditportfolio.netlify.app/)  
+  ✉️ kananpandot02@gmail.com  
+
+- **Partha Mete** (B2430052)  
+  [🌐 Portfolio](https://parthamete.github.io/portfolio/)  
+  ✉️ metepartha2001@gmail.com  
+
+- **Ramakrishna Mission Vivekananda Educational and Research Institute**  
+  📍 Belur Math, Howrah, West Bengal
+
+
