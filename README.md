@@ -61,13 +61,12 @@ In a world moving toward **touchless interaction**, especially after the pandemi
 
 ## 🚀 How to Run
 
-You can run this project locally in **Jupyter Notebook** or **Visual Studio Code (VS Code)**.
-
-### ✅ Requirements
+You can run this project locally in **Jupyter Notebook** or **Visual Studio Code (VS Code)**
 
 Make sure Python is installed, then install the required packages:
-
-
+```bash
+pip install opencv-python mediapipe pyautogui numpy
+pip install screen_brightness_control pycaw comtypes
 
 ## 🖐️ Hand Gesture Modules
 
@@ -146,11 +145,3 @@ Control slides in presentations using clear gestures:
   url = {https://github.com/kananpandit02/hand_gesture_control}
 }
 
-
-
-
-
-
-```bash
-pip install opencv-python mediapipe pyautogui numpy
-pip install screen_brightness_control pycaw comtypes
